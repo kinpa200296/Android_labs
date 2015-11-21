@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kinpa200296.android.labs.calculatormk2.AdvancedCalculatorActivity">
+    <item
+        android:id="@+id/action_basic"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_basic_block" />
+</menu>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Calculator Mark 2</string>
+    <string name="title_activity_advanced_block">Advanced Block</string>
+    <string name="action_advanced_block">Advanced</string>
+    <string name="action_basic_block">Basic</string>
+    <string name="resultPreview">Result Preview</string>
+    <string name="expression">Expression</string>
+    <string name="error">Error</string>
+    <string name="bad_result">Bad result</string>
+    <string name="unknown_request">Unknown requestCode</string>
+    <string name="btn7">7</string>
+    <string name="btn4">4</string>
+    <string name="btn1">1</string>
+    <string name="btnSeparator">.</string>
+    <string name="btn5">5</string>
+    <string name="btn8">8</string>
+    <string name="btn2">2</string>
+    <string name="btn0">0</string>
+    <string name="btn9">9</string>
+    <string name="btn6">6</string>
+    <string name="btn3">3</string>
+    <string name="btnCalculate">=</string>
+    <string name="btnDelete">Del</string>
+    <string name="btnDiv">/</string>
+    <string name="btnMul">*</string>
+    <string name="btnSub">-</string>
+    <string name="btnAdd">+</string>
+    <string name="btnSin">sin</string>
+    <string name="btnCos">cos</string>
+    <string name="btnLn">ln</string>
+    <string name="btnPi">pi</string>
+    <string name="btnLeftBracket">(</string>
+    <string name="btnLog">log</string>
+    <string name="btnExp">e</string>
+    <string name="btnRightBracket">)</string>
+    <string name="btnTan">tan</string>
+    <string name="btnAbs">abs</string>
+    <string name="btnPower">^</string>
+    <string name="btnSqrt">sqrt</string>
+</resources>

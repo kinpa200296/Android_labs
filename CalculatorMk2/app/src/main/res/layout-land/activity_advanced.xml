@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/DisplayBlock">
+
+        <TextView
+            android:id="@+id/expression"
+            style="@style/Text.Expression"
+            android:text="@string/expression" />
+
+        <TextView
+            android:id="@+id/resultPreview"
+            style="@style/Text.ResultPreview"
+            android:text="@string/resultPreview" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/AdvancedCalculatorBlock">
+
+        <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Numbers">
+
+            <Button
+                android:id="@+id/btnSin"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnSin" />
+
+            <Button
+                android:id="@+id/btnCos"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnCos" />
+
+            <Button
+                android:id="@+id/btnTan"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnTan" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Numbers">
+
+            <Button
+                android:id="@+id/btnLn"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnLn" />
+
+            <Button
+                android:id="@+id/btnLog"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnLog" />
+
+            <Button
+                android:id="@+id/btnAbs"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnAbs" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Numbers">
+
+            <Button
+                android:id="@+id/btnPi"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnPi" />
+
+            <Button
+                android:id="@+id/btnExp"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnExp" />
+
+            <Button
+                android:id="@+id/btnPower"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnPower" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Numbers">
+
+            <Button
+                android:id="@+id/btnLeftBracket"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnLeftBracket" />
+
+            <Button
+                android:id="@+id/btnRightBracket"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnRightBracket" />
+
+            <Button
+                android:id="@+id/btnSqrt"
+                style="@style/AdvancedCalculatorButton.Number"
+                android:text="@string/btnSqrt" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AdvancedCalculatorButtonBlock.Operations"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/AdvancedCalculatorButton.Operation"
+                android:text="@string/btnDelete" />
+
+            <LinearLayout
+                style="@style/AdvancedCalculatorButtonBlock.Operations"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Operations">
+
+                    <Button
+                        android:id="@+id/btnDiv"
+                        style="@style/AdvancedCalculatorButton.Operation"
+                        android:text="@string/btnDiv" />
+
+                    <Button
+                        android:id="@+id/btnMul"
+                        style="@style/AdvancedCalculatorButton.Operation"
+                        android:text="@string/btnMul" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Operations">
+
+                    <Button
+                        android:id="@+id/btnSub"
+                        style="@style/AdvancedCalculatorButton.Operation"
+                        android:text="@string/btnSub" />
+
+                    <Button
+                        android:id="@+id/btnAdd"
+                        style="@style/AdvancedCalculatorButton.Operation"
+                        android:text="@string/btnAdd" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
