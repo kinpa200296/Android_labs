@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Calculator Mark 3</string>
+    <string name="tab_title_advanced_block">Advanced</string>
+    <string name="tab_title_basic_block">Basic</string>
+    <string name="resultPreview">Result Preview</string>
+    <string name="expression">Expression</string>
+    <string name="error">Error</string>
+    <string name="btn7" translatable="false">7</string>
+    <string name="btn4" translatable="false">4</string>
+    <string name="btn1" translatable="false">1</string>
+    <string name="btnSeparator" translatable="false">.</string>
+    <string name="btn5" translatable="false">5</string>
+    <string name="btn8" translatable="false">8</string>
+    <string name="btn2" translatable="false">2</string>
+    <string name="btn0" translatable="false">0</string>
+    <string name="btn9" translatable="false">9</string>
+    <string name="btn6" translatable="false">6</string>
+    <string name="btn3" translatable="false">3</string>
+    <string name="btnCalculate" translatable="false">=</string>
+    <string name="btnDelete">Del</string>
+    <string name="btnDiv" translatable="false">/</string>
+    <string name="btnMul" translatable="false">*</string>
+    <string name="btnSub" translatable="false">-</string>
+    <string name="btnAdd" translatable="false">+</string>
+    <string name="btnSin" translatable="false">sin</string>
+    <string name="btnCos" translatable="false">cos</string>
+    <string name="btnLn" translatable="false">ln</string>
+    <string name="btnPi" translatable="false">pi</string>
+    <string name="btnLeftBracket" translatable="false">(</string>
+    <string name="btnLog" translatable="false">log</string>
+    <string name="btnExp" translatable="false">e</string>
+    <string name="btnRightBracket" translatable="false">)</string>
+    <string name="btnTan" translatable="false">tan</string>
+    <string name="btnAbs" translatable="false">abs</string>
+    <string name="btnPower" translatable="false">^</string>
+    <string name="btnSqrt" translatable="false">sqrt</string>
+</resources>

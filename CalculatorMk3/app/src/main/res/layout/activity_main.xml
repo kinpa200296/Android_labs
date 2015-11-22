@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/DisplayBlock">
+
+        <TextView
+            android:id="@+id/expression"
+            style="@style/Text.Expression"
+            android:text="@string/expression" />
+
+        <TextView
+            android:id="@+id/resultPreview"
+            style="@style/Text.ResultPreview"
+            android:text="@string/resultPreview" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/CalculatorBlock">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/tabStrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/darker_gray"
+                android:textColor="@color/white" />
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout style="@style/CalculatorButtonBlock.Operations">
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/CalculatorButton.Operation"
+                android:text="@string/btnDelete" />
+
+            <ImageButton
+                android:id="@+id/btnDiv"
+                style="@style/CalculatorButton.Operation"
+                android:contentDescription="@string/btnDiv"
+                android:src="@drawable/divide_sign" />
+
+            <ImageButton
+                android:id="@+id/btnMul"
+                style="@style/CalculatorButton.Operation"
+                android:contentDescription="@string/btnMul"
+                android:src="@drawable/multiply_sign" />
+
+            <ImageButton
+                android:id="@+id/btnSub"
+                style="@style/CalculatorButton.Operation"
+                android:contentDescription="@string/btnSub"
+                android:src="@drawable/minus_sign" />
+
+            <ImageButton
+                android:id="@+id/btnAdd"
+                style="@style/CalculatorButton.Operation"
+                android:contentDescription="@string/btnAdd"
+                android:src="@drawable/plus_sign" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

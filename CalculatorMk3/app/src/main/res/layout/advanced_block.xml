@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AdvancedCalculatorBlock">
+
+    <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Numbers">
+
+        <Button
+            android:id="@+id/btnSin"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnSin" />
+
+        <Button
+            android:id="@+id/btnLn"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnLn" />
+
+        <ImageButton
+            android:id="@+id/btnPi"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:contentDescription="@string/btnPi"
+            android:src="@drawable/pi" />
+
+        <Button
+            android:id="@+id/btnLeftBracket"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnLeftBracket" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Numbers">
+
+        <Button
+            android:id="@+id/btnCos"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnCos" />
+
+        <Button
+            android:id="@+id/btnLog"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnLog" />
+
+        <Button
+            android:id="@+id/btnExp"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnExp" />
+
+        <Button
+            android:id="@+id/btnRightBracket"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnRightBracket" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/AdvancedCalculatorButtonBlock.Numbers">
+
+        <Button
+            android:id="@+id/btnTan"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnTan" />
+
+        <Button
+            android:id="@+id/btnAbs"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnAbs" />
+
+        <Button
+            android:id="@+id/btnPower"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:text="@string/btnPower" />
+
+        <ImageButton
+            android:id="@+id/btnSqrt"
+            style="@style/AdvancedCalculatorButton.Number"
+            android:contentDescription="@string/btnSqrt"
+            android:src="@drawable/sqrt_sign" />
+    </LinearLayout>
+
+</LinearLayout>

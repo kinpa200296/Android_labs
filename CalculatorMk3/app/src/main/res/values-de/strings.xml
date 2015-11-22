@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rechner Version 3</string>
+    <string name="error">Fehler</string>
+    <string name="expression">Ausdruck</string>
+    <string name="resultPreview">Ergebnis Vorschau</string>
+    <string name="tab_title_advanced_block">Erweiterte</string>
+    <string name="tab_title_basic_block">Basic</string>
+</resources>
