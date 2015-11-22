@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_change_block"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/calculator_advanced"
+        android:title="@string/title_advanced_block" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">έκδοση αριθμομηχανή 4</string>
+    <string name="error">Σφάλμα</string>
+    <string name="expression">Έκφραση</string>
+    <string name="resultPreview">Προεπισκόπηση αποτέλεσμα</string>
+    <string name="title_advanced_block">Προχωρημένος</string>
+    <string name="title_basic_block">Βασικός</string>
+</resources>

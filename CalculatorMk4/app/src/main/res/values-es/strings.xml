@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de la versión 4</string>
+    <string name="error">Error</string>
+    <string name="expression">Expresión</string>
+    <string name="resultPreview">Resultado de vista previa</string>
+    <string name="title_advanced_block">Avanzado</string>
+    <string name="title_basic_block">Básico</string>
+</resources>

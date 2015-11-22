@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Калькулятар версія 4</string>
+    <string name="error">Памылка</string>
+    <string name="expression">Выраз</string>
+    <string name="resultPreview">Прадпрагляд выніку</string>
+    <string name="title_basic_block">Базавы</string>
+    <string name="title_advanced_block">Інжынерны</string>
+</resources>

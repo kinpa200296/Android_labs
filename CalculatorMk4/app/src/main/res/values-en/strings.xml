@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator Mark 4</string>
+    <string name="error">Error</string>
+    <string name="expression">Expression</string>
+    <string name="resultPreview">Result Preview</string>
+    <string name="title_advanced_block">Advanced</string>
+    <string name="title_basic_block">Basic</string>
+</resources>

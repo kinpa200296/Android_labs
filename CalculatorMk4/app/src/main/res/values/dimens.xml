@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="text_vertical_margin_small">20dp</dimen>
+    <dimen name="text_vertical_margin_large">40dp</dimen>
+</resources>
