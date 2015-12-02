@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Список дел версия 1</string>
+    <string name="action_add_item">Добавить дело</string>
+    <string name="action_edit_item">Редактировать дело</string>
+    <string name="action_remove_item">Удалить дело</string>
+    <string name="btnAdd">Добавить</string>
+    <string name="btnCancel">Отменить</string>
+    <string name="btnSave">Сохранить</string>
+    <string name="stateDone">Завершено</string>
+    <string name="stateNotDone">Выполняется</string>
+    <string name="title_todo_create">Создание дела</string>
+    <string name="title_todo_detail">Подробности о деле</string>
+    <string name="title_todo_edit">Редактирование дела</string>
+    <string name="toDoDate">Дата завершения дела</string>
+    <string name="toDoDateLabel">Дата завершения:</string>
+    <string name="toDoDescription">Описание дела</string>
+    <string name="toDoDescriptionLabel">Описание</string>
+    <string name="toDoState">Статус дела</string>
+    <string name="toDoStateLabel">Статус:</string>
+    <string name="toDoTimeLabel">Время завершения:</string>
+    <string name="toDoTime">Время завершения дела</string>
+    <string name="toDoTitle">Название дела</string>
+    <string name="toDoTitleLabel">Название</string>
+</resources>
