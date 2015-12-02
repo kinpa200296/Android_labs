@@ -1,4 +1,4 @@
-package com.kinpa200296.android.labs.todolistmk1;
+package com.kinpa200296.android.labs.todolistmk2;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -11,37 +11,38 @@ import android.view.View;
 
 import java.util.Calendar;
 
-public class ToDoCreateActivity extends Activity implements ToDoCreateFragment.Callback {
+public class ToDoEditActivity extends Activity implements ToDoEditFragment.Callback {
 
     private static final int DIALOG_TIME = 1;
     private static final int DIALOG_DATE = 2;
 
-    private ToDoCreateFragment fragment;
+    private ToDoEditFragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo_create);
+        setContentView(R.layout.activity_todo_edit);
 
         if (savedInstanceState == null) {
             Bundle arguments = new Bundle();
+            arguments.putInt(ToDoEditFragment.ARG_INDEX, getIntent().getIntExtra(ToDoEditFragment.ARG_INDEX, -1));
             ToDoLoader.writeToBundle(arguments, ToDoLoader.loadFromExtras(getIntent()));
 
-            fragment = new ToDoCreateFragment();
+            fragment = new ToDoEditFragment();
             fragment.setArguments(arguments);
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
-            transaction.add(R.id.todo_create_container, fragment);
+            transaction.add(R.id.todo_edit_container, fragment);
             transaction.commit();
-        }
-        else{
-            fragment = (ToDoCreateFragment) getFragmentManager().findFragmentById(R.id.todo_create_container);
+        } else{
+            fragment = (ToDoEditFragment) getFragmentManager().findFragmentById(R.id.todo_edit_container);
         }
     }
 
     @Override
-    public void addToDo(ToDo toDo) {
+    public void updateToDo(int index, ToDo newToDo) {
         Intent intent = new Intent();
-        ToDoLoader.writeToExtras(intent, toDo);
+        intent.putExtra(ToDoEditFragment.ARG_INDEX, index);
+        ToDoLoader.writeToExtras(intent, newToDo);
         setResult(RESULT_OK, intent);
         finish();
     }

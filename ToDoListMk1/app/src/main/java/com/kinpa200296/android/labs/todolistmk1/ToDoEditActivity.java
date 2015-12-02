@@ -33,6 +33,8 @@ public class ToDoEditActivity extends Activity implements ToDoEditFragment.Callb
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
             transaction.add(R.id.todo_edit_container, fragment);
             transaction.commit();
+        } else{
+            fragment = (ToDoEditFragment) getFragmentManager().findFragmentById(R.id.todo_edit_container);
         }
     }
 

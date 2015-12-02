@@ -1,4 +1,4 @@
-package com.kinpa200296.android.labs.todolistmk1;
+package com.kinpa200296.android.labs.todolistmk2;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;

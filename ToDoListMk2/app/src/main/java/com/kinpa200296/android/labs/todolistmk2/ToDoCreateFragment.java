@@ -1,4 +1,4 @@
-package com.kinpa200296.android.labs.todolistmk1;
+package com.kinpa200296.android.labs.todolistmk2;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -12,27 +12,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-public class ToDoEditFragment extends Fragment implements OnDateTimeSetListener {
+public class ToDoCreateFragment extends Fragment implements OnDateTimeSetListener {
 
     private ToDo toDo;
-    private int index;
     private Callback callbackTarget = dummyCallbackTarget;
 
     private EditText toDoTitle, toDoDescription;
     private TextView toDoTime, toDoDate;
-    private Button btnSave, btnCancel;
-
-    public static final String ARG_INDEX = "argToDoIndex";
+    private Button btnAdd, btnCancel;
 
     public interface Callback {
-        void updateToDo(int index, ToDo newToDo);
+        void addToDo(ToDo toDo);
 
         void cancelAction();
     }
 
     private static Callback dummyCallbackTarget = new Callback() {
         @Override
-        public void updateToDo(int index, ToDo newToDo) {
+        public void addToDo(ToDo toDo) {
 
         }
 
@@ -42,20 +39,17 @@ public class ToDoEditFragment extends Fragment implements OnDateTimeSetListener 
         }
     };
 
-    public ToDoEditFragment() {
+    public ToDoCreateFragment() {
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getArguments().containsKey(ToDoLoader.ARG_TITLE)) {
-            toDo = ToDoLoader.loadFromBundle(getArguments());
-            index = getArguments().getInt(ARG_INDEX);
-        }
-        if (savedInstanceState != null) {
+        if (savedInstanceState == null) {
+            toDo = ToDo.getNotInitializedToDo();
+        } else {
             toDo = ToDoLoader.loadFromBundle(savedInstanceState);
-            index = savedInstanceState.getInt(ARG_INDEX);
         }
     }
 
@@ -64,29 +58,29 @@ public class ToDoEditFragment extends Fragment implements OnDateTimeSetListener 
         super.onSaveInstanceState(outState);
 
         ToDoLoader.writeToBundle(outState, toDo);
-        outState.putInt(ARG_INDEX, index);
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_todo_edit, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_todo_create, container, false);
 
         toDoTitle = (EditText) rootView.findViewById(R.id.toDoTitle);
         toDoDescription = (EditText) rootView.findViewById(R.id.toDoDescription);
         toDoTime = (TextView) rootView.findViewById(R.id.toDoTime);
         toDoDate = (TextView) rootView.findViewById(R.id.toDoDate);
-        btnSave = (Button) rootView.findViewById(R.id.btnSave);
+        btnAdd = (Button) rootView.findViewById(R.id.btnAdd);
         btnCancel = (Button) rootView.findViewById(R.id.btnCancel);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.btnSave:
+                    case R.id.btnAdd:
                         toDo.setTitle(toDoTitle.getText().toString());
                         toDo.setDescription(toDoDescription.getText().toString());
-                        callbackTarget.updateToDo(index, toDo);
+                        callbackTarget.addToDo(toDo);
                         break;
                     case R.id.btnCancel:
                         callbackTarget.cancelAction();
@@ -94,7 +88,7 @@ public class ToDoEditFragment extends Fragment implements OnDateTimeSetListener 
             }
         };
 
-        btnSave.setOnClickListener(listener);
+        btnAdd.setOnClickListener(listener);
         btnCancel.setOnClickListener(listener);
 
         if (toDo != null) {

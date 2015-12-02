@@ -1,4 +1,4 @@
-package com.kinpa200296.android.labs.todolistmk1;
+package com.kinpa200296.android.labs.todolistmk2;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -167,7 +167,7 @@ public class ToDoListActivity extends Activity
                 break;
             case R.id.action_remove_item:
                 listFragment.repository.remove(info.position);
-                if (isTwoPane){
+                if (isTwoPane) {
                     cancelAction();
                 }
                 break;

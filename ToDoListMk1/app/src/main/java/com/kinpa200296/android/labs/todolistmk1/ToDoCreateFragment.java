@@ -48,8 +48,18 @@ public class ToDoCreateFragment extends Fragment implements OnDateTimeSetListene
 
         if (savedInstanceState == null) {
             toDo = ToDo.getNotInitializedToDo();
+        } else {
+            toDo = ToDoLoader.loadFromBundle(savedInstanceState);
         }
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        ToDoLoader.writeToBundle(outState, toDo);
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -66,7 +76,7 @@ public class ToDoCreateFragment extends Fragment implements OnDateTimeSetListene
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()){
+                switch (v.getId()) {
                     case R.id.btnAdd:
                         toDo.setTitle(toDoTitle.getText().toString());
                         toDo.setDescription(toDoDescription.getText().toString());
@@ -112,7 +122,7 @@ public class ToDoCreateFragment extends Fragment implements OnDateTimeSetListene
     @Override
     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
         toDo.setYear(year);
-        toDo.setMonth(monthOfYear);
+        toDo.setMonth(monthOfYear + 1);
         toDo.setDay(dayOfMonth);
 
         toDoDate.setText(toDo.getDate());

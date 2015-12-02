@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ToDo List Mark 2</string>
+    <string name="title_todo_detail">ToDo Detail</string>
+    <string name="toDoState">ToDo state</string>
+    <string name="toDoTitle">ToDo title</string>
+    <string name="toDoDate">ToDo Date</string>
+    <string name="toDoTime">ToDo Time</string>
+    <string name="toDoDescription">ToDo Description</string>
+    <string name="action_remove_item">Remove item</string>
+    <string name="action_edit_item">Edit item</string>
+    <string name="action_add_item">Add item</string>
+    <string name="toDoTimeLabel">Finish Time:</string>
+    <string name="toDoDateLabel">Finish Date:</string>
+    <string name="toDoStateLabel">State:</string>
+    <string name="toDoDescriptionLabel">Description</string>
+    <string name="stateDone">Done</string>
+    <string name="stateNotDone">In progress</string>
+    <string name="title_todo_create">ToDo Create</string>
+    <string name="title_todo_edit">ToDo Edit</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnSave">Save</string>
+    <string name="toDoTitleLabel">Title</string>
+</resources>
