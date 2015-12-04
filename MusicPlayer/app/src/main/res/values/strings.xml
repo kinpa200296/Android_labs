@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Music Player</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnPlay">Play</string>
+    <string name="btnPause">Pause</string>
+    <string name="btnStop">Stop</string>
+    <string name="tvProgress">Never Launched</string>
+</resources>

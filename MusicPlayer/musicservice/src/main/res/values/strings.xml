@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">Music Service</string>
+    <string name="playing">Playing</string>
+    <string name="paused">Paused</string>
+    <string name="stopped">Stopped</string>
+    <string name="timeFormat" formatted="false" translatable="false">%02d:%02d</string>
+</resources>

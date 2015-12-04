@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="paused">На паузе</string>
+    <string name="playing">Проигрывается</string>
+    <string name="stopped">Остановлен</string>
+</resources>

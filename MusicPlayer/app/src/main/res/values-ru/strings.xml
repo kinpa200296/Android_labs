@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Музыкальный плеер</string>
+    <string name="action_settings">Настройки</string>
+    <string name="btnPause">Пауза</string>
+    <string name="btnPlay">Воспроизвести</string>
+    <string name="btnStop">Остановить</string>
+    <string name="tvProgress">Никогда не запускался</string>
+    <string name="hello_world">Привет мир!</string>
+</resources>
