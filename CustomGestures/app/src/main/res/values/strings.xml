@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Custom Gestures</string>
+
+    <string name="verdict">You have drawn </string>
+    <string name="invitation">Draw some greek letter</string>
+</resources>
