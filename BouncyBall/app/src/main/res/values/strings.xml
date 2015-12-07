@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bouncy Ball</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ballSize">Ball size:</string>
+    <string name="bounceRate">Bounce rate:</string>
+    <string name="friction">Friction:</string>
+</resources>
