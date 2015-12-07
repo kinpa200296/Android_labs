@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sample Ndk</string>
+
+    <string name="result">Result:</string>
+    <string name="firstArg">First Argument:</string>
+    <string name="secondArg">Second Argument:</string>
+    <string name="calculateGcd">Calculate Gcd</string>
+</resources>
